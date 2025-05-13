@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ritika & Me — Our Love Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #e0f7fa);
+      color: #333;
+    }
+    .loading {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #b71c1c;
+    }
+    .timeline {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .event {
+      background: #ffffffcc;
+      border-radius: 20px;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+    }
+    .event h2 {
+      color: #1565c0;
+    }
+    .event p {
+      font-size: 1rem;
+    }
+    .event-images {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+    .event-images img {
+      border-radius: 50%;
+      border: 4px solid #ffb6c1;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    h1.title {
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      color: #e91e63;
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loader">
+    <img src="images/photo5.jpg" alt="Us Together" width="200" style="border-radius: 50%; margin-bottom: 1rem;">
+    <img src="images/photo2.jpg" alt="Her Smiling" width="150" style="border-radius: 20px; margin-bottom: 1rem;">
+    <p>Loading our love story...</p>
+  </div>
+
+  <div style="display: none;" id="content">
+    <h1 class="title">Our Love Timeline</h1>
+    <div class="timeline">
+      <div class="event">
+        <h2>February 23, 2021 — Where It All Began</h2>
+        <p>We met on a Discord server. Who knew a simple hello would turn into a beautiful journey?</p>
+        <div class="event-images">
+          <img src="images/photo1.jpg" alt="Boy">
+          <img src="images/photo2.jpg" alt="Ritika">
+        </div>
+      </div>
+      <div class="event">
+        <h2>March 2021 — Late Night Talks</h2>
+        <p>Endless conversations about everything and nothing. Time just flew by when we were together.</p>
+        <div class="event-images">
+          <img src="images/photo3.jpg" alt="Boy">
+          <img src="images/photo4.jpg" alt="Ritika">
+        </div>
+      </div>
+      <div class="event">
+        <h2>June 2021 — The Realization</h2>
+        <p>Somewhere between our chats and giggles, we realized it was love.</p>
+        <div class="event-images">
+          <img src="images/photo5.jpg" alt="Boy">
+          <img src="images/photo6.jpg" alt="Ritika">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
